@@ -1,0 +1,19 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "groups": [],
+        "name": "testfieldSerice",
+        "sign": "TestFieldServiceApp.testfieldSerice()[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@479cbee5]"
+      },
+      "dependsOn": [],
+      "startTime": 1520945766334,
+      "duration": 32240,
+      "result": "fail",
+      "passPer": 0.0
+    }
+  ]
+}

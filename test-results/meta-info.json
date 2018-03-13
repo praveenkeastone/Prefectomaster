@@ -1,0 +1,14 @@
+{
+  "reports": [
+    {
+      "name": "Default suite",
+      "dir": "test-results/13_Mar_2018_01_01_PM/json",
+      "startTime": 1520946085586
+    },
+    {
+      "name": "Default suite",
+      "dir": "test-results/13_Mar_2018_12_54_PM/json",
+      "startTime": 1520945765681
+    }
+  ]
+}

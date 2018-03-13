@@ -1,0 +1,3 @@
+passwdtxtbox.loginpage.fieldservice = {\"locator\":\"id=com.infostretch.sourceapp:id/password\",\"desc\":\"passwordtxtbox on loginpage\"}
+emailtxtbox.loginpage.fieldservice = {\"locator\":\"id=com.infostretch.sourceapp:id/email\",\"desc\":\"emailtxtbox on loginpage\"}
+signinbtn.loginpage.fieldservice = {\"locator\":\"id=com.infostretch.sourceapp:id/email_sign_in_button\",\"desc\":\"signinbtn on loginpage\"}
