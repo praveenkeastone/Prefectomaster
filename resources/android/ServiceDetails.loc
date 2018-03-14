@@ -1,0 +1,2 @@
+servicename.detailpage.fieldservice = {\"locator\":\"xpath=//*[@resource-id=\\\"com.infostretch.sourceapp:id/detail_tv_title\\\"]\",\"desc\":\"servicename on servicedetailpage\"}
+servicecategory.detailpage.fieldservice = {\"locator\":\"xpath=//*[@resource-id=\\\"com.infostretch.sourceapp:id/detail_tv_category\\\"]\",\"desc\":\"servicecategory on servicedetailpage\"}

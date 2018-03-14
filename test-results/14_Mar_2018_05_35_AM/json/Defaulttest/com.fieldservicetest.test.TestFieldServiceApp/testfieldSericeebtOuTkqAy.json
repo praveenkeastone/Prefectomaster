@@ -1,0 +1,145 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/email, using=id}"
+      ],
+      "result": "id: 0",
+      "subLogs": [],
+      "duration": 1099
+    },
+    {
+      "commandName": "sendKeysToElement",
+      "args": [
+        "By.id: com.infostretch.sourceapp:id/email",
+        "{\"id\":\"0\",\"value\":[\"test@test.com\"]}"
+      ],
+      "result": "sendKeysToElement:null",
+      "subLogs": [],
+      "duration": 1854
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/password, using=id}"
+      ],
+      "result": "id: 1",
+      "subLogs": [],
+      "duration": 595
+    },
+    {
+      "commandName": "sendKeysToElement",
+      "args": [
+        "By.id: com.infostretch.sourceapp:id/password",
+        "{\"id\":\"1\",\"value\":[\"test\"]}"
+      ],
+      "result": "sendKeysToElement:null",
+      "subLogs": [],
+      "duration": 1991
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/email_sign_in_button, using=id}"
+      ],
+      "result": "id: 2",
+      "subLogs": [],
+      "duration": 545
+    },
+    {
+      "commandName": "clickElement",
+      "args": [
+        "By.id: com.infostretch.sourceapp:id/email_sign_in_button",
+        "{\"id\":\"2\"}"
+      ],
+      "result": "clickElement:null",
+      "subLogs": [],
+      "duration": 853
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.android.packageinstaller:id/permission_allow_button, using=id}"
+      ],
+      "result": "Element with by id 'com.android.packageinstaller:id/permission_allow_button' wasn't found.\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'\nSystem info: host: '3166db3610ce', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_131'\nDriver info: driver.version: EventFiringWebDriver\nCommand duration or timeout: 731 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'\nSystem info: host: 'ICPL12426', ip: '10.11.31.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'\nDriver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver\nCapabilities [{appPackage=com.infostretch.sourceapp, reportPdfUrl=https://partners.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160&_timestamp[0]=1521007326007, appPath=PUBLIC:Resigned_FieldService.apk, deviceName=02157DF2A1B46C22, platform=ANY, password=, deviceSessionId=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160, driverClass=io.appium.java_client.android.AndroidDriver, automationName=Appium, host=partners.perfectomobile.com, singleTestReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160&_timestamp[0]=1521007326007, takesScreenshot=true, javascriptEnabled=true, platformName=Android, applicationName=Field Service, rotatable=true, testGridReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160&_timestamp[0]=1521007326007, entityType=appium_driver, serverConnector=, securityToken=, executionId=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160, webdriver.remote.sessionid=781dc7b7-e0c6-494d-9905-780565f5929d, autoLaunch=true, locationContextEnabled=true, scriptName=RemoteWebDriver, reportKey=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160, windTunnelReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160&_timestamp[0]=1521007326007, user=, cssSelectorsEnabled=true, autoAcceptAlerts=true}]\nSession ID: 781dc7b7-e0c6-494d-9905-780565f5929d\n*** Element info: {Using=id, value=com.android.packageinstaller:id/permission_allow_button}",
+      "subLogs": [],
+      "duration": 739
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.android.packageinstaller:id/permission_allow_button, using=id}"
+      ],
+      "result": "Element with by id 'com.android.packageinstaller:id/permission_allow_button' wasn't found.\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'\nSystem info: host: '3166db3610ce', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_131'\nDriver info: driver.version: EventFiringWebDriver\nCommand duration or timeout: 657 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'\nSystem info: host: 'ICPL12426', ip: '10.11.31.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'\nDriver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver\nCapabilities [{appPackage=com.infostretch.sourceapp, reportPdfUrl=https://partners.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160&_timestamp[0]=1521007326007, appPath=PUBLIC:Resigned_FieldService.apk, deviceName=02157DF2A1B46C22, platform=ANY, password=, deviceSessionId=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160, driverClass=io.appium.java_client.android.AndroidDriver, automationName=Appium, host=partners.perfectomobile.com, singleTestReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160&_timestamp[0]=1521007326007, takesScreenshot=true, javascriptEnabled=true, platformName=Android, applicationName=Field Service, rotatable=true, testGridReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160&_timestamp[0]=1521007326007, entityType=appium_driver, serverConnector=, securityToken=, executionId=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160, webdriver.remote.sessionid=781dc7b7-e0c6-494d-9905-780565f5929d, autoLaunch=true, locationContextEnabled=true, scriptName=RemoteWebDriver, reportKey=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160, windTunnelReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_06_02_06_5160&_timestamp[0]=1521007326007, user=, cssSelectorsEnabled=true, autoAcceptAlerts=true}]\nSession ID: 781dc7b7-e0c6-494d-9905-780565f5929d\n*** Element info: {Using=id, value=com.android.packageinstaller:id/permission_allow_button}",
+      "subLogs": [],
+      "duration": 658
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.android.packageinstaller:id/permission_allow_button, using=id}"
+      ],
+      "result": "id: 3",
+      "subLogs": [],
+      "duration": 408
+    },
+    {
+      "commandName": "clickElement",
+      "args": [
+        "By.id: com.android.packageinstaller:id/permission_allow_button",
+        "{\"id\":\"3\"}"
+      ],
+      "result": "clickElement:null",
+      "subLogs": [],
+      "duration": 635
+    },
+    {
+      "commandName": "findElements",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/logout, using=id}"
+      ],
+      "result": "[id: 4]",
+      "subLogs": [],
+      "duration": 1626
+    },
+    {
+      "commandName": "findElements",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/logout, using=id}"
+      ],
+      "result": "[id: 5]",
+      "subLogs": [],
+      "duration": 335
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/logout, using=id}"
+      ],
+      "result": "id: 6",
+      "subLogs": [],
+      "duration": 327
+    },
+    {
+      "commandName": "isElementDisplayed",
+      "args": [
+        "By.id: com.infostretch.sourceapp:id/logout",
+        "{\"id\":\"6\"}"
+      ],
+      "result": "isElementDisplayed:true",
+      "subLogs": [],
+      "duration": 337
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "\nExpected: &lt;true&gt;\n     Actual: was &lt;true&gt;",
+      "type": "Pass",
+      "screenshot": "../img/testfieldSerice_1lstmr18x2opd41913.png",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ]
+}

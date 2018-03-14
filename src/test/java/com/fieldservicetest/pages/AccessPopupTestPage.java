@@ -6,7 +6,7 @@ import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
 
-public class AccesspopupTestPage extends WebDriverBaseTestPage<WebDriverTestPage> {
+public class AccessPopupTestPage extends WebDriverBaseTestPage<WebDriverTestPage> {
 
 	@FindBy(locator = "allowbtn.locationpopup.fieldservice")
 	private QAFWebElement allowbtnLocationpopupFieldservice;
@@ -27,7 +27,16 @@ public class AccesspopupTestPage extends WebDriverBaseTestPage<WebDriverTestPage
 	
 	public void selectAllow()
 	{
-		allowbtnLocationpopupFieldservice.click();
+		try {
+		if(allowbtnLocationpopupFieldservice.isDisplayed()&&allowbtnLocationpopupFieldservice.isEnabled())
+			allowbtnLocationpopupFieldservice.click();
+		else
+			System.out.println("allow button not visible");
+		}
+		catch(Exception e)
+		{
+			
+		}
 	}
 
 }

@@ -1,0 +1,259 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/email, using=id}"
+      ],
+      "result": "id: 0",
+      "subLogs": [],
+      "duration": 1519
+    },
+    {
+      "commandName": "sendKeysToElement",
+      "args": [
+        "By.id: com.infostretch.sourceapp:id/email",
+        "{\"id\":\"0\",\"value\":[\"test@test.com\"]}"
+      ],
+      "result": "sendKeysToElement:null",
+      "subLogs": [],
+      "duration": 1872
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/password, using=id}"
+      ],
+      "result": "id: 1",
+      "subLogs": [],
+      "duration": 692
+    },
+    {
+      "commandName": "sendKeysToElement",
+      "args": [
+        "By.id: com.infostretch.sourceapp:id/password",
+        "{\"id\":\"1\",\"value\":[\"test\"]}"
+      ],
+      "result": "sendKeysToElement:null",
+      "subLogs": [],
+      "duration": 1284
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/email_sign_in_button, using=id}"
+      ],
+      "result": "id: 2",
+      "subLogs": [],
+      "duration": 663
+    },
+    {
+      "commandName": "clickElement",
+      "args": [
+        "By.id: com.infostretch.sourceapp:id/email_sign_in_button",
+        "{\"id\":\"2\"}"
+      ],
+      "result": "clickElement:null",
+      "subLogs": [],
+      "duration": 544
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.android.packageinstaller:id/permission_allow_button, using=id}"
+      ],
+      "result": "Element with by id 'com.android.packageinstaller:id/permission_allow_button' wasn't found.\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'\nSystem info: host: '3166db3610ce', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_131'\nDriver info: driver.version: EventFiringWebDriver\nCommand duration or timeout: 1.10 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'\nSystem info: host: 'ICPL12426', ip: '10.11.31.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'\nDriver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver\nCapabilities [{appPackage=com.infostretch.sourceapp, reportPdfUrl=https://partners.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358&_timestamp[0]=1521031051523, appPath=PUBLIC:Resigned_FieldService.apk, deviceName=FA6BS0304695, platform=ANY, password=, deviceSessionId=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358, driverClass=io.appium.java_client.android.AndroidDriver, automationName=Appium, host=partners.perfectomobile.com, singleTestReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358&_timestamp[0]=1521031051523, takesScreenshot=true, javascriptEnabled=true, platformName=Android, applicationName=Field Service, rotatable=true, testGridReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358&_timestamp[0]=1521031051523, entityType=appium_driver, serverConnector=, securityToken=, executionId=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358, webdriver.remote.sessionid=49a14694-fb20-42d4-9c31-f9b87daabf9a, autoLaunch=true, locationContextEnabled=true, scriptName=RemoteWebDriver, reportKey=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358, windTunnelReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358&_timestamp[0]=1521031051523, user=, cssSelectorsEnabled=true, autoAcceptAlerts=true}]\nSession ID: 49a14694-fb20-42d4-9c31-f9b87daabf9a\n*** Element info: {Using=id, value=com.android.packageinstaller:id/permission_allow_button}",
+      "subLogs": [],
+      "duration": 1117
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.android.packageinstaller:id/permission_allow_button, using=id}"
+      ],
+      "result": "Element with by id 'com.android.packageinstaller:id/permission_allow_button' wasn't found.\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'\nSystem info: host: '3166db3610ce', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_131'\nDriver info: driver.version: EventFiringWebDriver\nCommand duration or timeout: 450 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'\nSystem info: host: 'ICPL12426', ip: '10.11.31.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'\nDriver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver\nCapabilities [{appPackage=com.infostretch.sourceapp, reportPdfUrl=https://partners.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358&_timestamp[0]=1521031051523, appPath=PUBLIC:Resigned_FieldService.apk, deviceName=FA6BS0304695, platform=ANY, password=, deviceSessionId=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358, driverClass=io.appium.java_client.android.AndroidDriver, automationName=Appium, host=partners.perfectomobile.com, singleTestReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358&_timestamp[0]=1521031051523, takesScreenshot=true, javascriptEnabled=true, platformName=Android, applicationName=Field Service, rotatable=true, testGridReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358&_timestamp[0]=1521031051523, entityType=appium_driver, serverConnector=, securityToken=, executionId=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358, webdriver.remote.sessionid=49a14694-fb20-42d4-9c31-f9b87daabf9a, autoLaunch=true, locationContextEnabled=true, scriptName=RemoteWebDriver, reportKey=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358, windTunnelReportUrl=https://partners.reporting.perfectomobile.com?externalId[0]=is_user1@infostretch.com_RemoteWebDriver_18-03-14_12_37_31_6358&_timestamp[0]=1521031051523, user=, cssSelectorsEnabled=true, autoAcceptAlerts=true}]\nSession ID: 49a14694-fb20-42d4-9c31-f9b87daabf9a\n*** Element info: {Using=id, value=com.android.packageinstaller:id/permission_allow_button}",
+      "subLogs": [],
+      "duration": 451
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.android.packageinstaller:id/permission_allow_button, using=id}"
+      ],
+      "result": "id: 3",
+      "subLogs": [],
+      "duration": 1158
+    },
+    {
+      "commandName": "isElementDisplayed",
+      "args": [
+        "By.id: com.android.packageinstaller:id/permission_allow_button",
+        "{\"id\":\"3\"}"
+      ],
+      "result": "isElementDisplayed:true",
+      "subLogs": [],
+      "duration": 526
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.android.packageinstaller:id/permission_allow_button, using=id}"
+      ],
+      "result": "id: 4",
+      "subLogs": [],
+      "duration": 478
+    },
+    {
+      "commandName": "isElementEnabled",
+      "args": [
+        "By.id: com.android.packageinstaller:id/permission_allow_button",
+        "{\"id\":\"4\"}"
+      ],
+      "result": "isElementEnabled:true",
+      "subLogs": [],
+      "duration": 681
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.android.packageinstaller:id/permission_allow_button, using=id}"
+      ],
+      "result": "id: 5",
+      "subLogs": [],
+      "duration": 418
+    },
+    {
+      "commandName": "clickElement",
+      "args": [
+        "By.id: com.android.packageinstaller:id/permission_allow_button",
+        "{\"id\":\"5\"}"
+      ],
+      "result": "clickElement:null",
+      "subLogs": [],
+      "duration": 619
+    },
+    {
+      "commandName": "findElements",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/logout, using=id}"
+      ],
+      "result": "[id: 6]",
+      "subLogs": [],
+      "duration": 940
+    },
+    {
+      "commandName": "findElements",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/logout, using=id}"
+      ],
+      "result": "[id: 7]",
+      "subLogs": [],
+      "duration": 448
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=com.infostretch.sourceapp:id/logout, using=id}"
+      ],
+      "result": "id: 8",
+      "subLogs": [],
+      "duration": 497
+    },
+    {
+      "commandName": "isElementDisplayed",
+      "args": [
+        "By.id: com.infostretch.sourceapp:id/logout",
+        "{\"id\":\"8\"}"
+      ],
+      "result": "isElementDisplayed:true",
+      "subLogs": [],
+      "duration": 521
+    },
+    {
+      "commandName": "findElements",
+      "args": [
+        "{value=//android.widget.ListView/android.widget.RelativeLayout, using=xpath}"
+      ],
+      "result": "[id: 9, id: 10, id: 11, id: 12, id: 13]",
+      "subLogs": [],
+      "duration": 568
+    },
+    {
+      "commandName": "isElementDisplayed",
+      "args": [
+        "By.xpath: //android.widget.ListView/android.widget.RelativeLayout",
+        "{\"id\":\"9\"}"
+      ],
+      "result": "isElementDisplayed:true",
+      "subLogs": [],
+      "duration": 470
+    },
+    {
+      "commandName": "findElements",
+      "args": [
+        "{value=//android.widget.ListView/android.widget.RelativeLayout, using=xpath}"
+      ],
+      "result": "[id: 14, id: 15, id: 16, id: 17, id: 18]",
+      "subLogs": [],
+      "duration": 511
+    },
+    {
+      "commandName": "findChildElement",
+      "args": [
+        "By.xpath: //android.widget.ListView/android.widget.RelativeLayout",
+        "{\"using\":\"xpath\",\"id\":\"15\",\"value\":\"//android.widget.TextView[@resource-id='com.infostretch.sourceapp:id/locationitem_tv_title']\"}"
+      ],
+      "result": "findChildElement:id: 19",
+      "subLogs": [],
+      "duration": 515
+    },
+    {
+      "commandName": "clickElement",
+      "args": [
+        "By.xpath: //android.widget.TextView[@resource-id='com.infostretch.sourceapp:id/locationitem_tv_title']",
+        "{\"id\":\"19\"}"
+      ],
+      "result": "clickElement:null",
+      "subLogs": [],
+      "duration": 707
+    },
+    {
+      "commandName": "findElement",
+      "args": [
+        "{value=//*[@resource-id=\"com.infostretch.sourceapp:id/detail_tv_category\"], using=xpath}"
+      ],
+      "result": "id: 20",
+      "subLogs": [],
+      "duration": 468
+    },
+    {
+      "commandName": "isElementDisplayed",
+      "args": [
+        "By.xpath: //*[@resource-id=\"com.infostretch.sourceapp:id/detail_tv_category\"]",
+        "{\"id\":\"20\"}"
+      ],
+      "result": "isElementDisplayed:true",
+      "subLogs": [],
+      "duration": 432
+    },
+    {
+      "commandName": "findElements",
+      "args": [
+        "{value=//*[@resource-id=\"com.infostretch.sourceapp:id/detail_tv_category\"], using=xpath}"
+      ],
+      "result": "[id: 21]",
+      "subLogs": [],
+      "duration": 429
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "\nExpected: &lt;true&gt;\n     Actual: was &lt;true&gt;",
+      "type": "Pass",
+      "screenshot": "../img/testfieldSerice_pwm4d6hm4xy555428.png",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ]
+}

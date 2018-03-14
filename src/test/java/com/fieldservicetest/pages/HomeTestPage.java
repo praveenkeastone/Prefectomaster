@@ -1,8 +1,11 @@
 package com.fieldservicetest.pages;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.hamcrest.Matchers;
+import org.testng.Reporter;
 
 import com.fieldservicetest.component.ServiceListComp;
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
@@ -37,19 +40,23 @@ public void launchPage(PageLocator locator, Object... args) {
 
 	
 	
+	
 	public void verifyHomePage()
 	{
+		
 		logoutbtnHomepageFieldservice.waitForPresent();
 		Validator.verifyThat(logoutbtnHomepageFieldservice.isPresent()&&logoutbtnHomepageFieldservice.isDisplayed(), 
 				Matchers.equalTo(true));
+		
+		
 	
-		/*getServicelistHomepageFieldservice().get(0).waitForPresent();
-		Validator.verifyThat(getServicelistHomepageFieldservice().size(), Matchers.greaterThan(0));*/
-		/*for(ServiceListComp comp: servicelistHomepageFieldservice)
-		{
-			Reporter.log(comp.getServicenameHomepageFieldservice().getText(),true);
-			Reporter.log(comp.getLocationmilesHomepageFieldservice().getText(),true);
-		}*/
+		
+	}
+	public void selectService(int index)
+	{
+		getServicelistHomepageFieldservice().get(0).waitForVisible();
+		
+		getServicelistHomepageFieldservice().get(index).getServicenameHomepageFieldservice().click();
 	}
 
 }
