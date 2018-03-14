@@ -1,0 +1,35 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "groups": [],
+        "name": "testfieldSerice",
+        "sign": "TestFieldServiceApp.testfieldSerice()[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]"
+      },
+      "dependsOn": [],
+      "startTime": 1521001635448,
+      "duration": 3799,
+      "result": "skip",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "groups": [],
+        "name": "testfieldSerice",
+        "resultFileName": "testfieldSericevkeLDDbHzW",
+        "sign": "TestFieldServiceApp.testfieldSerice()[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]"
+      },
+      "dependsOn": [],
+      "startTime": 1521001707897,
+      "duration": 3779,
+      "result": "skip",
+      "passPer": 0.0
+    }
+  ]
+}

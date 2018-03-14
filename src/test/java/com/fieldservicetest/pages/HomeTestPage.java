@@ -19,7 +19,10 @@ public class HomeTestPage extends WebDriverBaseTestPage<WebDriverTestPage> {
 	@FindBy(locator = "logoutbtn.homepage.fieldservice")
 	private QAFWebElement logoutbtnHomepageFieldservice;
 	
-
+@Override
+public void launchPage(PageLocator locator, Object... args) {
+	
+}
 	@Override
 	protected void openPage(PageLocator pageLocator, Object... args) {
 	}

@@ -1,36 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Timed out after 30 seconds: Wait time out for logoutbtn on fieldservice to be present
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'ICPL12426', ip: '10.11.31.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown <a href="../img/testfieldSerice_kqxd7qs838h4102.png" target="_blank">[View Screenshot]</a> </div></div>]]>
+      <![CDATA[<div style="display:block;margin-left:10px;"></div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50099" started-at="2018-03-13T13:01:25Z" finished-at="2018-03-13T13:02:15Z">
+  <suite name="Default suite" duration-ms="3457" started-at="2018-03-14T04:46:25Z" finished-at="2018-03-14T04:46:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50099" started-at="2018-03-13T13:01:25Z" finished-at="2018-03-13T13:02:15Z">
+    <test name="Default test" duration-ms="3457" started-at="2018-03-14T04:46:25Z" finished-at="2018-03-14T04:46:28Z">
       <class name="com.fieldservicetest.test.TestFieldServiceApp">
-        <test-method status="FAIL" signature="testfieldSerice()[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@479cbee5]" name="testfieldSerice" duration-ms="47845" started-at="2018-03-13T18:31:25Z" finished-at="2018-03-13T18:32:13Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="PASS" signature="setupSuit(org.testng.ITestContext)[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="setupSuit" is-config="true" duration-ms="19" started-at="2018-03-14T10:16:24Z" finished-at="2018-03-14T10:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a04f701]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuit -->
+        <test-method status="PASS" signature="setupTest(org.testng.ITestContext)[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="setupTest" is-config="true" duration-ms="3" started-at="2018-03-14T10:16:25Z" finished-at="2018-03-14T10:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a04f701]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="setup" is-config="true" duration-ms="3" started-at="2018-03-14T10:16:25Z" finished-at="2018-03-14T10:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a04f701]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="setupMethod" is-config="true" duration-ms="1" started-at="2018-03-14T10:16:25Z" finished-at="2018-03-14T10:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.fieldservicetest.test.TestFieldServiceApp.testfieldSerice()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a04f701]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="SKIP" signature="testfieldSerice()[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="testfieldSerice" duration-ms="3412" started-at="2018-03-14T10:16:25Z" finished-at="2018-03-14T10:16:28Z">
+          <exception class="com.qmetry.qaf.automation.core.AutomationError">
             <message>
-              <![CDATA[Timed out after 30 seconds: Wait time out for logoutbtn on fieldservice to be present
+              <![CDATA[Timed out after 0 seconds: Unable to create driver instance in 1st attempt with retry timeout of 0 seconds. You can check/set value of 'driver.init.retry.timeout' appropriately to set retry timeout on driver initialization failure.
+java.lang.reflect.InvocationTargetException
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'ICPL12426', ip: '10.11.31.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds: Wait time out for logoutbtn on fieldservice to be present
+              <![CDATA[com.qmetry.qaf.automation.core.AutomationError: Timed out after 0 seconds: Unable to create driver instance in 1st attempt with retry timeout of 0 seconds. You can check/set value of 'driver.init.retry.timeout' appropriately to set retry timeout on driver initialization failure.
+java.lang.reflect.InvocationTargetException
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'ICPL12426', ip: '10.11.31.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:292)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.waitForPresent(QAFExtendedWebElement.java:499)
-	at com.fieldservicetest.pages.HomeTestPage.verifyHomePage(HomeTestPage.java:39)
-	at com.fieldservicetest.test.TestFieldServiceApp.testfieldSerice(TestFieldServiceApp.java:29)
+	at com.qmetry.qaf.automation.ui.UiDriverFactory.getDriverObj(UiDriverFactory.java:265)
+	at com.qmetry.qaf.automation.ui.UiDriverFactory.access$4(UiDriverFactory.java:245)
+	at com.qmetry.qaf.automation.ui.UiDriverFactory$Browsers.getDriver(UiDriverFactory.java:428)
+	at com.qmetry.qaf.automation.ui.UiDriverFactory$Browsers.access$6(UiDriverFactory.java:416)
+	at com.qmetry.qaf.automation.ui.UiDriverFactory.getDriver(UiDriverFactory.java:228)
+	at com.qmetry.qaf.automation.ui.UiDriverFactory.get(UiDriverFactory.java:94)
+	at com.qmetry.qaf.automation.core.QAFTestBase$DriverInitExpectedCondition.apply(QAFTestBase.java:511)
+	at com.qmetry.qaf.automation.core.QAFTestBase$DriverInitExpectedCondition.apply(QAFTestBase.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.qmetry.qaf.automation.core.QAFTestBase.init(QAFTestBase.java:410)
+	at com.qmetry.qaf.automation.core.QAFTestBase.getUiDriver(QAFTestBase.java:198)
+	at com.qmetry.qaf.automation.ui.WebDriverTestBase.getDriver(WebDriverTestBase.java:47)
+	at com.qmetry.qaf.automation.ui.WebDriverTestBase.getDriver(WebDriverTestBase.java:1)
+	at com.qmetry.qaf.automation.ui.AbstractTestPage.<init>(AbstractTestPage.java:86)
+	at com.qmetry.qaf.automation.ui.AbstractTestPage.<init>(AbstractTestPage.java:93)
+	at com.qmetry.qaf.automation.ui.WebDriverBaseTestPage.<init>(WebDriverBaseTestPage.java:62)
+	at com.qmetry.qaf.automation.ui.WebDriverBaseTestPage.<init>(WebDriverBaseTestPage.java:58)
+	at com.fieldservicetest.pages.LoginTestPage.<init>(LoginTestPage.java:9)
+	at com.fieldservicetest.test.TestFieldServiceApp.testfieldSerice(TestFieldServiceApp.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,16 +120,62 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- com.qmetry.qaf.automation.core.AutomationError -->
           <reporter-output>
             <line>
-              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Timed out after 30 seconds: Wait time out for logoutbtn on fieldservice to be present
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'ICPL12426', ip: '10.11.31.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown <a href="../img/testfieldSerice_kqxd7qs838h4102.png" target="_blank">[View Screenshot]</a> </div></div>]]>
+              <![CDATA[<div style="display:block;margin-left:10px;"></div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- testfieldSerice -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-03-14T10:16:28Z" finished-at="2018-03-14T10:16:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a04f701]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=testfieldSerice status=SKIP method=TestFieldServiceApp.testfieldSerice()[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634] output=<div style="display:block;margin-left:10px;"></div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-03-14T10:16:28Z" finished-at="2018-03-14T10:16:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a04f701]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-03-14T10:16:28Z" finished-at="2018-03-14T10:16:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a04f701]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuit(org.testng.ITestContext)[pri:0, instance:com.fieldservicetest.test.TestFieldServiceApp@3bd94634]" name="afterSuit" is-config="true" duration-ms="1" started-at="2018-03-14T10:16:28Z" finished-at="2018-03-14T10:16:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a04f701]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuit -->
       </class> <!-- com.fieldservicetest.test.TestFieldServiceApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

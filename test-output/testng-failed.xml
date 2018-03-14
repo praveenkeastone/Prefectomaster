@@ -5,7 +5,15 @@
     <classes>
       <class name="com.fieldservicetest.test.TestFieldServiceApp">
         <methods>
+          <include name="afterSuit"/>
+          <include name="setupMethod"/>
+          <include name="setupSuit"/>
           <include name="testfieldSerice"/>
+          <include name="setupTest"/>
+          <include name="afterClass"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- com.fieldservicetest.test.TestFieldServiceApp -->
     </classes>

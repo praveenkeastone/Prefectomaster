@@ -1,0 +1,4 @@
+servicelist.homepage.fieldservice = {\"locator\":\"xpath=//android.widget.ListView[@resource-id='com.infostretch.sourceapp:id/activity_maps_listJobs']/android.widget.RelativeLayout\",\"desc\":\"servicelist on fieldservice\"}
+logoutbtn.homepage.fieldservice = {\"locator\":\"id=com.infostretch.sourceapp:id/logout\",\"desc\":\"logoutbtn on fieldservice\"}
+servicename.homepage.fieldservice = {\"locator\":\"xpath=//android.widget.TextView[@resource-id='com.infostretch.sourceapp:id/locationitem_tv_title']\",\"desc\":\"servicename on fieldservice\"}
+locationmiles.homepage.fieldservice = {\"locator\":\"xpath=//android.widget.TextView[@resource-id='com.infostretch.sourceapp:id/locationitem_tv_miles']\",\"desc\":\"locationmiles on fieldservice\"}

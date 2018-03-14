@@ -1,2 +1,0 @@
-allowbtn.locationpopup.fieldservice = {\"locator\":\"id=com.android.packageinstaller:id/permission_allow_button\",\"desc\":\"allowbtn on locationpopup\"}
-denybtn.locationpopup.fieldservice = {\"locator\":\"id=com.android.packageinstaller:id/permission_deny_button\",\"desc\":\"denybtn on locationpopup\"}
