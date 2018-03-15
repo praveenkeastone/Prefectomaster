@@ -14,17 +14,17 @@ public class TestFieldServiceApp extends WebDriverTestCase {
 	public void testfieldSerice()
 	{ 
 		LoginTestPage testpage= new LoginTestPage();
-		testpage.uninstallApp();
+		/*testpage.uninstallApp();
 		testpage.installApp();
-		testpage.launchApp();
+		testpage.launchApp();*/
 		testpage.loginToFieldSeriveApp("test@test.com","test");
 		AccessPopupTestPage access= new AccessPopupTestPage();
-		access.selectAllow();
+		//access.selectAllow();
 		HomeTestPage home= new HomeTestPage();
 		home.verifyHomePage();
-		home.selectService(1);
+		home.selectService("0");
 		ServiceDetailsTestPage detailPage= new ServiceDetailsTestPage();
-		detailPage.swipeUp();
+		/*detailPage.swipeUp();*/
 		detailPage.verifyServiceSelection();
 		
 		

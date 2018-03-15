@@ -15,6 +15,10 @@ public class ServiceListComp  extends QAFWebComponent{
 	private QAFWebElement servicenameHomepageFieldservice;
 	@FindBy(locator = "locationmiles.homepage.fieldservice")
 	private QAFWebElement locationmilesHomepageFieldservice;
+	@FindBy(locator = "servicecategory.homepage.fieldservice")
+	private QAFWebElement serviceCategoryHomepageFieldservice;
+	
+	
 	
 	public QAFWebElement getServicenameHomepageFieldservice() {
 		return servicenameHomepageFieldservice;
@@ -23,5 +27,10 @@ public class ServiceListComp  extends QAFWebComponent{
 	public QAFWebElement getLocationmilesHomepageFieldservice() {
 		return locationmilesHomepageFieldservice;
 	}
+	
+	public QAFWebElement getServiceCategoryHomepageFieldservice() {
+		return serviceCategoryHomepageFieldservice;
+	}
+	
 
 }

@@ -5,6 +5,9 @@ import java.util.Map;
 
 import org.hamcrest.Matchers;
 
+import com.fieldservicetest.bean.ServiceBean;
+import com.qmetry.qaf.automation.core.ConfigurationManager;
+import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
@@ -31,18 +34,16 @@ public class ServiceDetailsTestPage extends WebDriverBaseTestPage<WebDriverTestP
 		return servicecategoryDetailpageFieldservice;
 	}
 	
-	public void swipeUp()
-	{
-		Map<String, Object> params = new HashMap<>();
-		params.put("start", "20%,40%");
-		params.put("end", "15%,60%");
-		params.put("duration", "3");
-		Object res = driver.executeScript("mobile:touch:swipe", params);
-	}
+	
+	@QAFTestStep(description = "user should see the selected service detail page")
 	
 	public void verifyServiceSelection()
 	{
+		servicecategoryDetailpageFieldservice.waitForPresent();
+		ServiceBean data = (ServiceBean)ConfigurationManager.getBundle().getProperty("bean.data");
 		Validator.verifyThat(servicecategoryDetailpageFieldservice.isDisplayed()&&servicecategoryDetailpageFieldservice.isPresent(), Matchers.equalTo(true));
+		Validator.verifyThat(data.getCategoryName(), Matchers.containsString(servicecategoryDetailpageFieldservice.getText()));
+
 	}
 
 }

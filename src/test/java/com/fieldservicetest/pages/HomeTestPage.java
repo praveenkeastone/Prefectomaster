@@ -7,7 +7,10 @@ import java.util.Map;
 import org.hamcrest.Matchers;
 import org.testng.Reporter;
 
+import com.fieldservicetest.bean.ServiceBean;
 import com.fieldservicetest.component.ServiceListComp;
+import com.qmetry.qaf.automation.core.ConfigurationManager;
+import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
@@ -39,24 +42,58 @@ public void launchPage(PageLocator locator, Object... args) {
 	}
 
 	
-	
+	@QAFTestStep(description = "user should see the list of services")
 	
 	public void verifyHomePage()
 	{
-		
-		logoutbtnHomepageFieldservice.waitForPresent();
-		Validator.verifyThat(logoutbtnHomepageFieldservice.isPresent()&&logoutbtnHomepageFieldservice.isDisplayed(), 
+		getServicelistHomepageFieldservice().get(0).waitForVisible();	
+		Validator.verifyThat(getServicelistHomepageFieldservice().get(0).getServiceCategoryHomepageFieldservice().isPresent()
+				&&getServicelistHomepageFieldservice().get(0).getServiceCategoryHomepageFieldservice().isDisplayed(), 
 				Matchers.equalTo(true));
 		
-		
-	
+		for(ServiceListComp comp: getServicelistHomepageFieldservice())
+		{
+			Reporter.log(comp.getLocationmilesHomepageFieldservice().getText(),true);
+			Reporter.log(comp.getServiceCategoryHomepageFieldservice().getText(),true);
+			//Reporter.log(comp.getServicenameHomepageFieldservice().getText(),true);
+		}
 		
 	}
-	public void selectService(int index)
-	{
+	
+	@QAFTestStep(description = "user selects service {0} from service list")
+	public void selectService(String str0)
+	{	
+		ServiceBean bean = new ServiceBean();
 		getServicelistHomepageFieldservice().get(0).waitForVisible();
-		
-		getServicelistHomepageFieldservice().get(index).getServicenameHomepageFieldservice().click();
+		bean.setCategoryName(getServicelistHomepageFieldservice().get(Integer.parseInt(str0)).getServiceCategoryHomepageFieldservice().getText());
+		getServicelistHomepageFieldservice().get(Integer.parseInt(str0)).getServiceCategoryHomepageFieldservice().click();
+		ConfigurationManager.getBundle().setProperty("bean.data", bean);
+	}
+	
+	@QAFTestStep(description = "user is already loggedin logout first")
+	public void verifyLogoutPresent()
+	{
+		if(logoutbtnHomepageFieldservice.isPresent())
+		{
+			logoutbtnHomepageFieldservice.click();
+		}
+		else
+		{
+			Reporter.log("user is on the Logout page");
+		}
+	}
+	
+	
+	@QAFTestStep(description = "user should see Map {0}")
+	
+	public void verifyMap(String fileName)
+	{
+		Map<String, Object> params = new HashMap<>();
+		params.put("content", "PUBLIC:/Praveendm/"+fileName);
+		params.put("context", "body");
+		String res = (String) driver.executeScript("mobile:image:find",params);
+		Reporter.log(")))))))))))))))))))))(((((((((((((((((((((     "+ res, true);
+		Validator.verifyThat(res, Matchers.containsString("true"));
 	}
 
 }

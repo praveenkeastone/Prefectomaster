@@ -1,5 +1,8 @@
 package com.fieldservicetest.pages;
 
+import org.testng.Reporter;
+
+import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
@@ -25,18 +28,22 @@ public class AccessPopupTestPage extends WebDriverBaseTestPage<WebDriverTestPage
 		return denybtnLocationpopupFieldservice;
 	}
 	
+	
+	
+	
+	@QAFTestStep(description = "user should see location popup")
 	public void selectAllow()
 	{
-		try {
-		if(allowbtnLocationpopupFieldservice.isDisplayed()&&allowbtnLocationpopupFieldservice.isEnabled())
-			allowbtnLocationpopupFieldservice.click();
-		else
-			System.out.println("allow button not visible");
-		}
-		catch(Exception e)
+		
+		if(allowbtnLocationpopupFieldservice.isPresent())
 		{
-			
+			allowbtnLocationpopupFieldservice.click();
 		}
+		else
+		{
+			Reporter.log("allow button not visible", true);
+		}
+		
 	}
 
 }
