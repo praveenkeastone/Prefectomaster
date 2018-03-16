@@ -45,22 +45,11 @@ public class LoginTestPage extends WebDriverBaseTestPage<WebDriverTestPage> {
 	public QAFWebElement getSigninbtnLoginpageFieldservice() {
 		return signinbtnLoginpageFieldservice;
 	}
-	@QAFTestStep(description = "user launches the application")
 	
+	@QAFTestStep(description = "user launches the application")
 	public void launchdevice()
 	{
-		AccessPopupTestPage page= new AccessPopupTestPage();
-		
-		
-		if(page.getAllowbtnLocationpopupFieldservice().isPresent())
-		{
-			page.getAllowbtnLocationpopupFieldservice().click();
-		}
-		else
-		{
-			Reporter.log("popup is not present", true);
-		}
-		
+		launchApp();	
 	}
 	
 	
@@ -80,9 +69,20 @@ public class LoginTestPage extends WebDriverBaseTestPage<WebDriverTestPage> {
 	public  void launchApp()
 	{
 		Map<String, Object> params = new HashMap<>();
-		params.put("package", "com.infostretch.sourceapp");
+		if(ConfigurationManager.getBundle().getProperty("platform.Name").equals("android"))
+		{
+		params.put("package", ConfigurationManager.getBundle().getProperty("driver.capabilities.appPackage"));
 		params.put("activity", "com.infostretch.sourceapp.LoginActivity");
 		driver.executeScript("mobile:activity:open", params);
+		}
+		else
+		{
+			params.put("identifier", ConfigurationManager.getBundle().getProperty("driver.capabilities.bundleId"));
+			driver.executeScript("mobile:application:open", params);
+		}
+		
+		
+		
 	}
 	@QAFTestStep(description = "user uninstall the application")
 	public void uninstallApp()

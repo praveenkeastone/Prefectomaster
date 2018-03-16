@@ -32,8 +32,9 @@ public class AccessPopupTestPage extends WebDriverBaseTestPage<WebDriverTestPage
 	
 	
 	@QAFTestStep(description = "user should see location popup")
-	public void selectAllow()
+	public void selectAllow() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		
 		if(allowbtnLocationpopupFieldservice.isPresent())
 		{

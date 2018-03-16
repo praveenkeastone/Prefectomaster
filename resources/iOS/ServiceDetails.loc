@@ -1,0 +1,2 @@
+servicename.detailpage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeStaticText[1]\",\"desc\":\"servicename on servicedetailpage\"}
+servicecategory.detailpage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeStaticText[2]\",\"desc\":\"servicecategory on servicedetailpage\"}

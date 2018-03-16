@@ -1,0 +1,2 @@
+allowbtn.locationpopup.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeButton[@label=\\\"Allow\\\"]\",\"desc\":\"allowbtn on locationpopup\"}
+denybtn.locationpopup.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeButton[@label=\\\"Don\u2019t Allow\\\"]\",\"desc\":\"denybtn on locationpopup\"}

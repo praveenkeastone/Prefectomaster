@@ -1,18 +1,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="QAS Demo" verbose="0">
-
-	<!-- <parameter name="driver.name" value="firefoxDriver" /> -->
+	
 	<test name="BDD Test" enabled="true">
+	<parameter name="platform.Name" value="android"/>
+	 <parameter name="env.resources" value="resources/android" />
+	 <parameter name="image.path" value="PUBLIC:/Praveendm/AndroidMap.png"/>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test> 
+	<test name="BDD Test1" enabled="true">
+	<parameter name="platform.Name" value="iOS"/>
+	 <parameter name="env.resources" value="resources/iOS" />
+	 <parameter name="image.path" value="PUBLIC:/Praveendm/iOSMap.png"/>
 		<classes>
 			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
 		</classes>
 	</test>
-
-	<test name="KWD Test" enabled="false">
-		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.csv.KwdTestFactory"></class>
-		</classes>
-	</test>
-
-
+	
+	
 </suite>

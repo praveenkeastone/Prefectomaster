@@ -1,0 +1,27 @@
+
+
+SCENARIO: TestFieldService
+META-DATA: {"description":"end to end","groups":["P1","P2","SMOKE"]}
+	
+	Given user launches the application
+	When user is already loggedin logout first
+	And user enters 'test@test.com' and 'test'and signIn
+	Then user should see location popup
+	And user should see the list of services
+	And user should see Map 
+	
+END
+
+SCENARIO: TestFieldService
+META-DATA: {"description":"end to end","groups":["P1","P2","SMOKE"]}
+	
+	Given user launches the application
+	When user is already loggedin logout first
+	And user enters 'test@test.com' and 'test'and signIn
+	Then user should see location popup
+	And user should see the list of services
+	And user should see Map
+	When user selects service '2' from service list
+	Then user should see the selected service detail page
+	
+END

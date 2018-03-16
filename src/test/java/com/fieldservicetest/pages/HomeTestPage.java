@@ -71,8 +71,9 @@ public void launchPage(PageLocator locator, Object... args) {
 	}
 	
 	@QAFTestStep(description = "user is already loggedin logout first")
-	public void verifyLogoutPresent()
+	public void verifyLogoutPresent() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		if(logoutbtnHomepageFieldservice.isPresent())
 		{
 			logoutbtnHomepageFieldservice.click();
@@ -84,12 +85,12 @@ public void launchPage(PageLocator locator, Object... args) {
 	}
 	
 	
-	@QAFTestStep(description = "user should see Map {0}")
+	@QAFTestStep(description = "user should see Map")
 	
-	public void verifyMap(String fileName)
+	public void verifyMap()
 	{
 		Map<String, Object> params = new HashMap<>();
-		params.put("content", "PUBLIC:/Praveendm/"+fileName);
+		params.put("content", ConfigurationManager.getBundle().getProperty("image.path"));
 		params.put("context", "body");
 		String res = (String) driver.executeScript("mobile:image:find",params);
 		Reporter.log(")))))))))))))))))))))(((((((((((((((((((((     "+ res, true);

@@ -1,0 +1,5 @@
+logoutbtn.homepage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeButton[@label=\\\"Logout\\\"]\",\"desc\":\"logoutbtn on fieldservice\"}
+servicelist.homepage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeCell\",\"desc\":\"servicelist on fieldservice\"}
+servicename.homepage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeStaticText[1]\",\"desc\":\"servicename on fieldservice\"}
+locationmiles.homepage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeStaticText[3]\",\"desc\":\"locationmiles on fieldservice\"}
+servicecategory.homepage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeStaticText[2]\",\"desc\":\"servicecategory on fieldservice\"}

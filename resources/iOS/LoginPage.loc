@@ -1,0 +1,3 @@
+passwdtxtbox.loginpage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeSecureTextField\",\"desc\":\"passwordtxtbox on loginpage\"}
+emailtxtbox.loginpage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeTextField\",\"desc\":\"emailtxtbox on loginpage\"}
+signinbtn.loginpage.fieldservice = {\"locator\":\"xpath=//XCUIElementTypeButton[@label='Submit']\",\"desc\":\"signinbtn on loginpage\"}

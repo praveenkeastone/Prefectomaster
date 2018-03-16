@@ -35,6 +35,11 @@ public class ServiceDetailsTestPage extends WebDriverBaseTestPage<WebDriverTestP
 	}
 	
 	
+	public void swipe()
+	{
+		
+	}
+	
 	@QAFTestStep(description = "user should see the selected service detail page")
 	
 	public void verifyServiceSelection()
